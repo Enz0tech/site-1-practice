@@ -1,13 +1,27 @@
 :root {
-    цвета
-    рамка
-    закругления бордер радиус мал и большие
-    тени
-    шрифты base
-    контейнер ширина
-    отступы контейнера от краев паддинг х
-    отступы паддинг у секций делимое на 2 если в макете 140 то надо писать 70
-    высота полей ввода
-    высота полей кнопок
-    транзитион дуратион 0.2
+    --color-light: #FFFFFF;
+    --color-light-alt: #E6E6E6;
+    --color-gray: #48555B;
+    --color-gray-alt: #979797;
+    --color-accent: #00A4E5;
+    --color-accent-alt: #16ace8;
+    --color-dark-bg: #171819;
+    --color-dark-bg-alt: #141a20;
+
+    --shadow: 0 4px 4 0 #000000;
+    
+    --border: 1px solid --color-light-alt: #E6E6E6;
+    --border-input: 1px solid --color-gray-alt: #979797;
+    
+    --font-family-base: 'OpenSans', sans-serif;
+    --font-family-header: 'Bebas Neue', sans-serif;
+
+    --container-width: 940px;
+    --container-padding-x: 20px;
+    --section-padding-y: 60px;
+
+    --input-height: 40px;
+    --button-height: 40px;
+
+    --transition-duration: 0.2s;
 }

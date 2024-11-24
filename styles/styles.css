@@ -91,4 +91,116 @@ svg * {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url(../fonts/BebasNeue-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Regular.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Regular.woff2) format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --color-light: #FFFFFF;
+  --color-light-alt: #E6E6E6;
+  --color-gray: #48555B;
+  --color-gray-alt: #979797;
+  --color-accent: #00A4E5;
+  --color-accent-alt: #16ace8;
+  --color-dark-bg: #171819;
+  --color-dark-bg-alt: #141a20;
+  --shadow: 0 4px 4 0 #000000;
+  --border: 1px solid --color-light-alt: #E6E6E6;
+  --border-input: 1px solid --color-gray-alt: #979797;
+  --font-family-base: "OpenSans", sans-serif;
+  --font-family-header: "Bebas Neue", sans-serif;
+  --container-width: 940px;
+  --container-padding-x: 20px;
+  --section-padding-y: 60px;
+  --input-height: 40px;
+  --button-height: 40px;
+  --transition-duration: 0.2s;
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  -webkit-clip-path: inset(100%) !important;
+          clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+@media (max-width: 767px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .visible-mobile {
+    display: none !important;
+  }
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.77;
+  color: var(--color-gray);
+  background-color: var(--color-light);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  text-shadow: var(--shadow);
+}
+
+h1 {
+  font-size: clamp(43px, 4.1666666667vw, 60px);
 }/*# sourceMappingURL=styles.css.map */
