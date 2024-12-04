@@ -7,6 +7,82 @@
     <title>Konstruct</title>
 </head>
 <body>
-    
+
+    <header class="header container">
+        <div class="header__inner">
+            <a class="header__logo" href="/">
+                <img class="logo__image" src="images/header-logo.svg" alt="Konstruct" width="101" height="23" loading="lazy">
+            </a>
+            <h1 class="visually-hidden">Konstruct - construction management firm</h1>
+            <div class="header__banner">
+                <h2 class="visually-hidden">About Konstruct firm</h2>
+                <div class="header__banner-body">
+                    <div class="header__banner-title h1">Partner with Konstruct</div>
+                    <div class="header__banner-description">
+                        <p>An award-winning construction management firm</p>
+                    </div>
+                </div>
+                <div class="header__banner-scroll">Scroll down</div>
+            </div>
+        </div>
+        <div class="header__wrapper">
+            <a class="header__wrapper-logo" href="/">
+                <img class="logo__image" src="images/nav-logo.svg" alt="Konstruct" width="101" height="23" loading="lazy">
+            </a>
+            <nav class="header__menu hidden-mobile">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="/">Home</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="/">About</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="/">Services</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="/">Work</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="/">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__burger-button burger-button visible-mobile" type="button" onclick="mobileOverlay.showModal()">
+                <span class="visually-hidden">Open navigation menu</span>
+            </button>
+        </div>
+        
+            
+
+        </nav>
+    </header>
+  
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="mobile-overlay__close-button cross-button" type="submit">
+                <span class="visually-hidden">Close navigation menu</span>
+            </button>
+        </form>
+        <div class="mobile-overlay__body">
+            <ul class="mobile-overlay__list">
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="/">Home</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="/">About</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="/">Services</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="/">Work</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="/">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </dialog>
 </body>
 </html>

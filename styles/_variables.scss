@@ -7,16 +7,15 @@
     --color-accent-alt: #16ace8;
     --color-dark-bg: #171819;
     --color-dark-bg-alt: #141a20;
-
-    --shadow: 0 4px 4 0 #000000;
     
-    --border: 1px solid --color-light-alt: #E6E6E6;
-    --border-input: 1px solid --color-gray-alt: #979797;
+    --border: 1px solid var(--color-light-alt);
+    --border-input: 1px solid var(--color-gray-alt);
     
     --font-family-base: 'OpenSans', sans-serif;
-    --font-family-header: 'Bebas Neue', sans-serif;
+    --font-family-accent: 'Bebas Neue', sans-serif;
 
-    --container-width: 940px;
+    --container-width: 1440px;
+    --container-small-width: 940px;
     --container-padding-x: 20px;
     --section-padding-y: 60px;
 
