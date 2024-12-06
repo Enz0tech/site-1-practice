@@ -1,0 +1,26 @@
+.section {
+    padding-block: var(--section-padding-y);
+
+    &__header {
+        letter-spacing: 0.13em;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            translate: -50%;
+            width: 50px;
+            height: 2px;
+            background-color: var(--color-accent);
+        }
+
+        &--centered {
+            --headerMarginBottom: 92px;
+
+            text-align: center;
+            margin-bottom: var(--headerMarginBottom);
+        }
+    }
+}

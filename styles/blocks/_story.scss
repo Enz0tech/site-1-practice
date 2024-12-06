@@ -1,0 +1,31 @@
+.story {
+    display: flex;
+    justify-content: space-between;
+
+    &__main {
+        max-width: 405px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    &__title {
+        text-transform: none;
+        letter-spacing: 0.01em;
+        line-height: 1.2;
+
+        & span {
+            color: var(--color-accent);
+        }
+    }
+
+    &__description {
+        letter-spacing: 0.01em;
+    }
+    
+    &__banner {
+        display: flex;
+        align-items: end;
+        column-gap: 20px;
+    }
+}

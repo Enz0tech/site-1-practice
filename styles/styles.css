@@ -216,7 +216,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: clamp(14px, 1.1111111111vw, 16px);
+  font-size: clamp(14px, 1.3888888889vw, 20px);
 }
 
 h4, .h4 {
@@ -422,4 +422,55 @@ h4, .h4 {
   row-gap: 30px;
   text-transform: uppercase;
   height: 80vh;
+}
+
+.section {
+  padding-block: var(--section-padding-y);
+}
+.section__header {
+  letter-spacing: 0.13em;
+  position: relative;
+}
+.section__header::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  translate: -50%;
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-accent);
+}
+.section__header--centered {
+  --headerMarginBottom: 92px;
+  text-align: center;
+  margin-bottom: var(--headerMarginBottom);
+}
+
+.story {
+  display: flex;
+  justify-content: space-between;
+}
+.story__main {
+  max-width: 405px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.story__title {
+  text-transform: none;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+.story__title span {
+  color: var(--color-accent);
+}
+.story__description {
+  letter-spacing: 0.01em;
+}
+.story__banner {
+  display: flex;
+  align-items: end;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }/*# sourceMappingURL=styles.css.map */
