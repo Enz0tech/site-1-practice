@@ -21,6 +21,10 @@
 
             text-align: center;
             margin-bottom: var(--headerMarginBottom);
+
+            @include tablet {
+                --headerMarginBottom: 50px;
+            }
         }
     }
 }

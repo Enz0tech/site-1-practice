@@ -2,11 +2,21 @@
     display: flex;
     justify-content: space-between;
 
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
     &__main {
-        max-width: 405px;
+        max-width: 387px;
         display: flex;
         flex-direction: column;
         row-gap: 30px;
+
+        @include tablet {
+            row-gap: 20px;
+        }
     }
 
     &__title {
@@ -27,5 +37,32 @@
         display: flex;
         align-items: end;
         column-gap: 20px;
+
+        @include mobile-s {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+
+    &-banner__item {
+        width: 140px;
+        height: 224px;
+        padding: 15px 15px 0 14px;
+        font-size: 24px;
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 1.21;
+        letter-spacing: 0.01em;
+        color: var(--color-light);
+
+        &:nth-child(1) {
+            background: url(../../images/story-1.png);
+        }
+        &:nth-child(2) {
+            background: url(../../images/story-2.png);
+        }
+        &:nth-child(3) {
+            background: url(../../images/story-3.png);
+        }
     }
 }
