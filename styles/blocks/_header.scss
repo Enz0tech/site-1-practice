@@ -1,5 +1,9 @@
 .header {
     padding-inline: var(--container-padding-x);
+
+    @include mobile {
+        padding-bottom: 30px;
+    }
     
     &__inner {
         padding-top: 41px;
@@ -104,12 +108,6 @@
                 background-color: currentColor;
                 transition-duration: inherit;
             }
-            
         }
     }
-
-
-    
-
-    
 }

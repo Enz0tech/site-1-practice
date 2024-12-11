@@ -1,0 +1,19 @@
+.services-card {
+    width: 295px;
+    padding: 39px 22px;
+
+    &__image {
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        width: 250px;
+        line-height: 1.5;
+        margin-bottom: 13px;
+    }
+
+    &__description {
+        width: 250px;
+        letter-spacing: 0.01em;
+    }
+}

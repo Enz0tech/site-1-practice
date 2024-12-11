@@ -1,0 +1,19 @@
+.services {
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        column-gap: 27px;
+
+        @include tablet {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+
+    &__item {
+        width: 295px;
+        height: 330px;
+        border: var(--border);
+    }
+}

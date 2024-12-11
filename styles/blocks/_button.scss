@@ -8,4 +8,12 @@
     text-transform: uppercase;
     letter-spacing: 0.04em;
     color: var(--color-light);
+    background-color: var(--color-accent);
+    border: none;
+    cursor: pointer;
+
+    @include hover {
+        color: var(--color-dark);
+        background-color: var(--color-accent-alt);
+    }
 }

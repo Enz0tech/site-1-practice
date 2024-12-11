@@ -2,12 +2,15 @@
     padding-block: var(--section-padding-y);
 
     &__header {
-        --headerMarginBottom: 92px;
 
-        margin-bottom: var(--headerMarginBottom);
+        &:not(:last-child) {
+            --headerMarginBottom: 92px;
 
-        @include tablet {
-            --headerMarginBottom: 50px;
+            margin-bottom: var(--headerMarginBottom);
+    
+            @include tablet {
+                --headerMarginBottom: 50px;
+            }
         }
     }
 
@@ -38,13 +41,26 @@
     &__services {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: start;
         column-gap: 155px;
+
+        @include tablet {
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 30px;
+        }
     }
 
     &__inner {
         display: flex;
+        align-items: center;
         column-gap: 32px;
+
+        @include mobile {
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 20px;
+        }
     }
 
     &__description {
