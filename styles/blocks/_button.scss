@@ -1,0 +1,11 @@
+.button {
+    @include flex-center;
+
+    height: var(--button-height);
+    padding-inline: 29px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-light);
+}

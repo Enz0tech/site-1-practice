@@ -223,6 +223,19 @@ h4, .h4 {
   font-size: clamp(11px, 0.7638888889vw, 11px);
 }
 
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--button-height);
+  padding-inline: 29px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-light);
+}
+
 .burger-button {
   padding: 0;
   background-color: transparent;
@@ -428,10 +441,20 @@ h4, .h4 {
   padding-block: var(--section-padding-y);
 }
 .section__header {
+  --headerMarginBottom: 92px;
+  margin-bottom: var(--headerMarginBottom);
+}
+@media (max-width: 1023px) {
+  .section__header {
+    --headerMarginBottom: 50px;
+  }
+}
+.section__title {
   letter-spacing: 0.13em;
   position: relative;
+  text-align: center;
 }
-.section__header::after {
+.section__title::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -441,15 +464,27 @@ h4, .h4 {
   height: 2px;
   background-color: var(--color-accent);
 }
-.section__header--centered {
-  --headerMarginBottom: 92px;
-  text-align: center;
-  margin-bottom: var(--headerMarginBottom);
+.section__title--lefted::after {
+  left: 0;
+  translate: 0;
 }
-@media (max-width: 1023px) {
-  .section__header--centered {
-    --headerMarginBottom: 50px;
-  }
+.section__services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 155px;
+       column-gap: 155px;
+}
+.section__inner {
+  display: flex;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.section__description {
+  max-width: 370px;
+  font-size: 11px;
+  line-height: 1.73;
+  letter-spacing: 0.02em;
 }
 
 .story {
@@ -509,11 +544,11 @@ h4, .h4 {
   color: var(--color-light);
 }
 .story-banner__item:nth-child(1) {
-  background: url(../../images/story-1.png);
+  background: url(../../images/story/story-1.png);
 }
 .story-banner__item:nth-child(2) {
-  background: url(../../images/story-2.png);
+  background: url(../../images/story/story-2.png);
 }
 .story-banner__item:nth-child(3) {
-  background: url(../../images/story-3.png);
+  background: url(../../images/story/story-3.png);
 }/*# sourceMappingURL=styles.css.map */

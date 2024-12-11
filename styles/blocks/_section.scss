@@ -2,8 +2,19 @@
     padding-block: var(--section-padding-y);
 
     &__header {
+        --headerMarginBottom: 92px;
+
+        margin-bottom: var(--headerMarginBottom);
+
+        @include tablet {
+            --headerMarginBottom: 50px;
+        }
+    }
+
+    &__title {
         letter-spacing: 0.13em;
         position: relative;
+        text-align: center;
 
         &::after {
             content: '';
@@ -16,15 +27,30 @@
             background-color: var(--color-accent);
         }
 
-        &--centered {
-            --headerMarginBottom: 92px;
-
-            text-align: center;
-            margin-bottom: var(--headerMarginBottom);
-
-            @include tablet {
-                --headerMarginBottom: 50px;
+        &--lefted {
+            &::after {
+                left: 0;
+                translate: 0;
             }
         }
+    }
+
+    &__services {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 155px;
+    }
+
+    &__inner {
+        display: flex;
+        column-gap: 32px;
+    }
+
+    &__description {
+        max-width: 370px;
+        font-size: 11px;
+        line-height: 1.73;
+        letter-spacing: 0.02em;
     }
 }
