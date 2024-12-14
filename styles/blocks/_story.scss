@@ -57,13 +57,13 @@
         color: var(--color-light);
 
         &:nth-child(1) {
-            background: url(../../images/story/story-1.png);
+            background: url("../../images/story/story-1.png/");
         }
         &:nth-child(2) {
-            background: url(../../images/story/story-2.png);
+            background: url("../../images/story/story-2.png");
         }
         &:nth-child(3) {
-            background: url(../../images/story/story-3.png);
+            background: url("../../images/story/story-3.png");
         }
     }
 }
