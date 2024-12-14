@@ -637,7 +637,7 @@ h4, .h4 {
   color: var(--color-light);
 }
 .story-banner__item:nth-child(1) {
-  background: url("../images/story/story-1.png/");
+  background: url("../images/story/story-1.png");
 }
 .story-banner__item:nth-child(2) {
   background: url("../images/story/story-2.png");
