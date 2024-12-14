@@ -83,7 +83,7 @@
                     <div class="section__description">
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
                     </div>
-                    <button class="services__button button" type="button">All Services</button>
+                    <button class="button" type="button">All Services</button>
                 </div>
             </header>
             <div class="section__body">
@@ -126,7 +126,116 @@
                 </div>
             </div>
         </section>
+
+        <section class="section section__suggest container">
+            <div class="suggest">
+                <header class="section__header suggest__header">
+                    <h2 class="suggest__title">Want to build something amazing?</h2>
+                    <button class="button" type="button">Get in touch</button>
+                </header>
+            </div>
+            <div class="section__body">
+                <div class="suggest-signup">
+                    <h3 class="suggest-signup__title">Newsletter Signup</h3>
+                    <form class="suggest-signup__form">
+                        <div class="suggest-signup__field field">
+                            <label class="field__label visually-hidden" for="email">Email</label>
+                            <input class="field__input" type="email" name="email" id="email" placeholder="test@youremail.com" required>
+                            <button class="field__button button" type="submit">Signup</button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </section>
     </main>
+
+    <footer class="footer container">
+        <div class="footer__inner">
+            <div class="footer__body">
+                <div class="footer__about">
+                    <h4 class="footer__about-title">Company</h4>
+                    <a class="footer__logo logo" href="/">
+                        <img class="logo__image" src="images/header-logo.svg" alt="Konstruct" width="101" height="23" loading="lazy">
+                    </a>
+                    <div class="footer__about-description">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__links-title">Links</h4>
+                    <div class="footer__links-wrapper">
+                        <ul class="footer__links-list">
+                            <li class="footer__links-item"><a href="/">Home</a></li>
+                            <li class="footer__links-item"><a href="/">About</a></li>
+                            <li class="footer__links-item"><a href="/">Services</a></li>
+                            <li class="footer__links-item"><a href="/">Projects</a></li>
+                            <li class="footer__links-item"><a href="/">Contact us</a></li>   
+                        </ul>
+                        <ul class="footer__links-list">
+                            <li class="footer__links-item"><a href="/">Faq</a></li>
+                            <li class="footer__links-item"><a href="/">Terms</a></li>
+                            <li class="footer__links-item"><a href="/">Careers</a></li>
+                        </ul>
+                        <ul class="footer__links-list">
+                            <li class="footer__links-item"><a href="/">Blog</a></li>
+                            <li class="footer__links-item"><a href="/">Partners</a></li>
+                            <li class="footer__links-item"><a href="/">News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__contacts">
+                    <h4 class="footer__contacts-title">Contact us</h4>
+                    <address class="footer__contacts-body">
+                        <p>213 Baker Street<br/>
+                            Oriel City Kounty<br/>
+                            7000 KNW,<br/>
+                            Kountry Name
+                        </p>
+                        <p><a href="tel:239942334022">+23 994 233 4022</a></p>
+                        <p><a href="mailto:info@konstruct.com">info@konstruct.com</a></p>
+                    </address>
+                </div>
+                <div class="footer__soc1als soc1als">
+                    <ul class="soc1als__list">
+                        <li class="soc1als__item">
+                            <a class="soc1als__link" href="/">
+                                <span class="visually-hidden">Facebook</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#ffffff" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>
+                            </a>
+                        </li>
+                        <li class="soc1als__item">
+                            <a class="soc1als__link" href="/">
+                                <span class="visually-hidden">Twitter</span>
+                                <svg width="12px" height="12px" viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)" fill="#ffffff">
+                                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                <path d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705" id="twitter-[#154]">
+                                
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc1als__item">
+                            <a class="soc1als__link" href="/">
+                                <span class="visually-hidden">Google</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path fill="#ffffff" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__extra">
+                <p class="footer__copyright">
+                    © <time datetime="2017">2017</time> Konstruct Inc. Designed by Jane Kathryn Teo
+                </p>
+            </div>
+        </div>
+    </footer>
   
     <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
         <form class="mobile-overlay__close-button-wrapper" method="dialog">

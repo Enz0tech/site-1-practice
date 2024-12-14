@@ -1,0 +1,35 @@
+.field {
+    display: flex;
+    padding-block: 30px;
+
+    &__input {
+        width: 250px;
+        height: var(--input-height);
+        padding-inline: 16px;
+        border: var(--border-input);
+
+        @include hover {
+            background-color: var(--color-accent);
+        }
+
+        &:focus {
+            border-color: var(--color-accent);
+            outline: none;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+
+        &::placeholder {
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 0.01em;
+            color: var(--color-gray);
+        }
+    }
+
+    &__button {
+        width: 150px;
+    }
+}

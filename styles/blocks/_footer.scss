@@ -1,0 +1,102 @@
+.footer {
+
+    &__body {
+        padding-block: 40px;
+        background-color: var(--color-dark-bg-alt);
+        color: var(--color-light);
+        display: flex;
+        justify-content: center;
+        column-gap: 55px;
+        font-size: 11px;
+
+        @include tablet {
+            flex-wrap: wrap;
+            row-gap: 25px;
+        }
+    }
+
+    &__about {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 17px;
+
+        &-title {
+            font-weight: 400;
+            letter-spacing: 0.08em;
+        }
+
+        &-description {
+            line-height: 1.73;
+            letter-spacing: 0.08em;
+        }
+    }
+
+    &__links {
+        width: 277px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        &-title {
+            font-weight: 400;
+            letter-spacing: 0.08em;
+        }
+
+        &-wrapper {
+            display: flex;
+            column-gap: 35px;
+        }
+
+        &-list {
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        &-item {
+            text-transform: uppercase;
+            font-weight: 600;
+            line-height: 2.27;
+            letter-spacing: 0.08em;
+
+            @include hover {
+                color: var(--color-accent);
+            }
+        }
+    }
+
+    &__contacts {
+        width: 141px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+
+        &-title {
+            font-weight: 400;
+            letter-spacing: 0.08em;
+        }
+
+        &-body p {
+            --paragraphMarginBottom: 10px;
+
+            font-style: normal;
+
+            & a {
+                @include hover {
+                    color: var(--color-accent);
+                }
+            }
+        }
+    }
+
+    &__extra {
+        color: var(--color-light);
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-align: center;
+        background-color: var(--color-dark-bg);
+        padding-block: 23px;
+    }
+}
