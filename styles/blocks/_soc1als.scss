@@ -5,9 +5,6 @@
         column-gap: 25px;
     }
 
-    &__item {
-    }
-
     &__link {
         @include flex-center(true);
         @include square(12px);
