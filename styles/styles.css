@@ -266,6 +266,7 @@ h4, .h4 {
   border: none;
   width: 48px;
   aspect-ratio: 1;
+  color: var(--color-dark-bg);
   position: relative;
 }
 @media (hover: hover) {
@@ -288,7 +289,7 @@ h4, .h4 {
   height: 2px;
   background-color: var(--color-dark-bg);
   border-radius: 5px;
-  box-shadow: 0 -8px currentColor, 0 8px currentColor;
+  box-shadow: 0 -8px, 0 8px;
 }
 
 .field {
