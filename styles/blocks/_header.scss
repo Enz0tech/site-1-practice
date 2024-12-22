@@ -1,5 +1,6 @@
 .header {
     padding-inline: var(--container-padding-x);
+    
 
     @include mobile {
         padding-bottom: 30px;

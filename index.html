@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <header class="header container">
+    <header class="header container" id="home">
         <div class="header__inner">
             <a class="header__logo logo" href="/">
                 <img class="logo__image" src="images/header-logo.svg" alt="Konstruct" width="101" height="23" loading="lazy">
@@ -32,19 +32,19 @@
             <nav class="header__menu hidden-mobile">
                 <ul class="header__menu-list">
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="/">Home</a>
+                        <a class="header__menu-link" href="#home">Home</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="/">About</a>
+                        <a class="header__menu-link" href="#about">About</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="/">Services</a>
+                        <a class="header__menu-link" href="#services">Services</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="/">Work</a>
+                        <a class="header__menu-link" href="#work">Work</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="/">Contact</a>
+                        <a class="header__menu-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -55,7 +55,7 @@
     </header>
 
     <main class="content">
-        <section class="section container-small">
+        <section class="section container-small" id="about">
             <header class="section__header">
                 <h2 class="section__title">Our Story</h2>
             </header>
@@ -76,7 +76,7 @@
             </div>
         </section>
         
-        <section class="section container-small">
+        <section class="section container-small" id="services">
             <header class="section__header section__services">
                 <h2 class="section__title section__title--lefted">Our Capabilities</h2>
                 <div class="section__inner">
@@ -127,7 +127,7 @@
             </div>
         </section>
 
-        <section class="section section__suggest container">
+        <section class="section section__suggest container" id="work">
             <div class="suggest">
                 <header class="section__header suggest__header">
                     <h2 class="suggest__title">Want to build something amazing?</h2>
@@ -150,7 +150,7 @@
         </section>
     </main>
 
-    <footer class="footer container">
+    <footer class="footer container" id="contact">
         <div class="footer__inner">
             <div class="footer__body">
                 <div class="footer__about">
@@ -246,22 +246,24 @@
         <div class="mobile-overlay__body">
             <ul class="mobile-overlay__list">
                 <li class="mobile-overlay__item">
-                    <a class="mobile-overlay__link" href="/">Home</a>
+                    <a class="mobile-overlay__link" href="#home">Home</a>
                 </li>
                 <li class="mobile-overlay__item">
-                    <a class="mobile-overlay__link" href="/">About</a>
+                    <a class="mobile-overlay__link" href="#about">About</a>
                 </li>
                 <li class="mobile-overlay__item">
-                    <a class="mobile-overlay__link" href="/">Services</a>
+                    <a class="mobile-overlay__link" href="#services">Services</a>
                 </li>
                 <li class="mobile-overlay__item">
-                    <a class="mobile-overlay__link" href="/">Work</a>
+                    <a class="mobile-overlay__link" href="#work">Work</a>
                 </li>
                 <li class="mobile-overlay__item">
-                    <a class="mobile-overlay__link" href="/">Contact</a>
+                    <a class="mobile-overlay__link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
     </dialog>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
