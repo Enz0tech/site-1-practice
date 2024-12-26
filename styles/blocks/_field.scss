@@ -2,6 +2,10 @@
     display: flex;
     padding-block: 30px;
 
+    @include mobile-s {
+        padding: 15px;
+    }
+
     &__input {
         width: 250px;
         height: var(--input-height);

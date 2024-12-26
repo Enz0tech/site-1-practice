@@ -198,6 +198,9 @@ body {
   color: var(--color-gray);
   background-color: var(--color-light);
 }
+body.lock {
+  overflow: hidden;
+}
 
 a,
 button,
@@ -295,6 +298,11 @@ h4, .h4 {
 .field {
   display: flex;
   padding-block: 30px;
+}
+@media (max-width: 767px) {
+  .field {
+    padding: 15px;
+  }
 }
 .field__input {
   width: 250px;
